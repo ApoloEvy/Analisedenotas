@@ -1,42 +1,28 @@
 numone = int(input("Nota do primeiro bimestre "))
-if numone < 0:
+if numone < 0 or numone >= 11:
     print("Por favor, números de 0 a 10")
     exit()
-if numone >= 11:
- print("Por favor, Numero de 0 a 10")
- exit()
         
 numtwo = int(input("Nota do segundo bimestre "))
-if numtwo < 0:
+if numtwo < 0 or numtwo >= 11:
     print("Por favor, números de 0 a 10")
     exit()
-if numtwo >= 11:
- print("Por favor, Numero de 0 a 10")
- exit()
-
 
 numtrhee = int(input("Nota do terceiro bimestre "))
-if numtrhee < 0:
+if numtrhee < 0 or numtrhee >= 11:
     print("Por favor, números de 0 a 10")
     exit()
-if numtrhee >= 11:
- print("Por favor, Numero de 0 a 10")
- exit()
 
 numfour = int(input("Nota do quarto bimestre "))
-if numfour < 0:
+if numfour < 0 or numfour >= 11:
     print("Por favor, números de 0 a 10")
     exit()
-if numfour >= 11:
- print("Por favor, Numero de 0 a 10")
- exit()
-
 
 finalnote = numone + numtwo + numtrhee + numfour
 
 if finalnote >= 20:
- print("voce foi aprovado")
+ print("Parabens! Voce foi aprovado com "+str(finalnote))
 elif finalnote >=15:
- print("Voce está na recuperação")
+ print("Voce está na recuperação com "+str(finalnote))
 else:
- print("Voce foi reprovado ")
+ print("Voce foi reprovado com "+finalnote)
